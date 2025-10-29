@@ -15,8 +15,11 @@ const philosopher = Philosopher({
 });
 
 export const metadata: Metadata = {
-  title: "Portfolio",
+  title: "Aayusha Mulmi",
   description: "Aayusha Portfolio",
+   icons: {
+    icon: "/Favicon.png",
+  },
 };
 
 export default function RootLayout({
