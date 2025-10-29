@@ -4,6 +4,7 @@ import Link from "next/link";
 import { RxHamburgerMenu } from "react-icons/rx";
 import { usePathname } from "next/navigation";
 import { useState } from "react";
+import { Button } from "antd";
 
 export default function Nav() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -13,19 +14,19 @@ export default function Nav() {
     { name: "Home", href: "/" },
     { name: "About", href: "/About" },
     { name: "Experience", href: "/Experience" },
-    { name: "Portfolio", href: "/Portfolio" },
-    { name: "Contacts", href: "/Contacts" },
+    { name: "Projects", href: "/Projects" },
+    { name: "Blog", href: "/Blog" },
   ];
 
   return (
     <nav>
-      <div className="flex justify-between items-center">
+      <div className="flex justify-between items-center mr-4">
         <h1 className="uppercase text-5xl p-5 font-philosopher">
           <span className="text-red-500">AA</span>YU.
         </h1>
 
         {/* Desktop Menu */}
-        <div className="hidden md:flex gap-8 mr-12 justify-end">
+        <div className="hidden md:flex gap-8 mr-12 justify-between">
           {navLinks.map((link) => (
             <Link
               key={link.name}
@@ -38,6 +39,7 @@ export default function Nav() {
             </Link>
           ))}
         </div>
+     <Button type="primary" danger><span className=" font-semibold">Contact Me</span></Button>
 
         {/* Mobile Menu Button */}
         <button
