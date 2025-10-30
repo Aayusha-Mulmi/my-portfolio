@@ -8,6 +8,15 @@ export default function Hero() {
   return (
     <div className="h-100vh flex relative py-15  ">
       <div className="mx-auto px-12 grid grid-cols-1 lg:grid-cols-2 gap-16 items-center justify-items-center">
+       <div>
+          <Image
+            src="/Images/1000017914.jpg"
+            width={375}
+            height={375}
+            alt="Picture of the author"
+            className="rounded-t-full object-cover shadow-lg h-70 w-60 sm:h-full sm:w-full"
+          />
+        </div>
         <div>
           <h1 className="text-3xl sm:text-5xl xl:text-6xl font-bold mb-3">
             Hi, I&apos;m <span className="text-red-500">Aayusha Mulmi</span>
@@ -69,15 +78,7 @@ export default function Hero() {
             </a>
           </div>
         </div>
-        <div>
-          <Image
-            src="/Images/1000017914.jpg"
-            width={375}
-            height={375}
-            alt="Picture of the author"
-            className="rounded-t-full object-cover shadow-lg"
-          />
-        </div>
+       
       </div>
     </div>
   );
