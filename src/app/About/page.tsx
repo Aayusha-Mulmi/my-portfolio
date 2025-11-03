@@ -53,6 +53,7 @@ export default function About() {
 
       <hr className="border-neutral-600" />
       <Skills />
+       <hr className="border-neutral-600" />
     </>
   );
 }

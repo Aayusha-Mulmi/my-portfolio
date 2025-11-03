@@ -33,7 +33,7 @@ export default function Hero() {
           </p>
           <div className="flex gap-3">
             <button className="mt-5 px-4 py-2 bg-red-500 text-white rounded-md hover:bg-red-600 transition duration-300 flex justify-center items-center gap-3 text-sm font-semibold">
-              View My Work
+              <a href="/MyWork">View My Work</a>
               <FaArrowRight />
             </button>
             <a href="/Resume.pdf " target="_blank" rel="noopener noreferrer">
