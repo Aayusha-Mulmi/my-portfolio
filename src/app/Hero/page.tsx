@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-html-link-for-pages */
 import Image from "next/image";
 import { FaArrowRight } from "react-icons/fa6";
 import { MdOutlineFileDownload } from "react-icons/md";
@@ -8,7 +9,7 @@ export default function Hero() {
   return (
     <div className="h-100vh flex relative py-15  ">
       <div className="mx-auto px-12 grid grid-cols-1 lg:grid-cols-2 gap-16 items-center justify-items-center">
-       <div>
+        <div>
           <Image
             src="/Images/1000017914.jpg"
             width={375}
@@ -36,7 +37,11 @@ export default function Hero() {
               <a href="/MyWork">View My Work</a>
               <FaArrowRight />
             </button>
-            <a href="/Resume.pdf " target="_blank" rel="noopener noreferrer">
+            <a
+              href="/AayuResume.pdf "
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <button className="mt-5 px-4 py-2 border bg-gray-900 border-gray-500 text-white rounded-md hover:bg-gray-800 transition duration-300 flex justify-center items-center gap-3 text-sm font-semibold">
                 <MdOutlineFileDownload className="text-xl" /> Resume
               </button>
@@ -78,7 +83,6 @@ export default function Hero() {
             </a>
           </div>
         </div>
-       
       </div>
     </div>
   );
