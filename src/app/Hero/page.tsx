@@ -1,5 +1,6 @@
-/* eslint-disable @next/next/no-html-link-for-pages */
+import Link from "next/link";
 import Image from "next/image";
+
 import { FaArrowRight } from "react-icons/fa6";
 import { MdOutlineFileDownload } from "react-icons/md";
 import { IoLogoGithub, IoLogoLinkedin, IoMdMail } from "react-icons/io";
@@ -34,8 +35,12 @@ export default function Hero() {
           </p>
           <div className="flex gap-3">
             <button className="mt-5 px-4 py-2 bg-red-500 text-white rounded-md hover:bg-red-600 transition duration-300 flex justify-center items-center gap-3 text-sm font-semibold">
-              <a href="/MyWork">View My Work</a>
-              <FaArrowRight />
+              <Link
+                href="/MyWork"
+                className="flex justify-center items-center gap-3 text-sm font-semibold"
+              >
+                View My Work <FaArrowRight />
+              </Link>
             </button>
             <a
               href="/AayuResume.pdf "

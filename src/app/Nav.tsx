@@ -1,9 +1,10 @@
 "use client";
 
+import { useState } from "react";
 import Link from "next/link";
+
 import { RxHamburgerMenu } from "react-icons/rx";
 import { usePathname } from "next/navigation";
-import { useState } from "react";
 
 export default function Nav() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -21,12 +22,9 @@ export default function Nav() {
   return (
     <nav className="relative">
       <div className="flex justify-between items-center px-8 py-4">
-        {/* Left: Logo */}
         <h1 className="uppercase text-5xl font-philosopher">
           <span className="text-red-500">AA</span>YU.
         </h1>
-
-        {/* Center: Nav Links (Desktop Only) */}
         <div className="hidden md:flex absolute left-1/2 transform -translate-x-1/2 gap-10">
           {navLinks
             .filter((link) => link.name !== "Contact Me")
@@ -45,7 +43,6 @@ export default function Nav() {
             ))}
         </div>
 
-        {/* Right: Contact Button (Desktop) */}
         <div className="hidden md:block">
           <Link href="/Contact">
             <button className="px-4 py-2 bg-red-500 text-white rounded-md hover:bg-red-600 transition duration-300 text-sm font-semibold">
@@ -53,8 +50,6 @@ export default function Nav() {
             </button>
           </Link>
         </div>
-
-        {/* Mobile Hamburger */}
         <button
           className="md:hidden text-2xl"
           onClick={() => setIsMenuOpen(!isMenuOpen)}
@@ -62,8 +57,6 @@ export default function Nav() {
           <RxHamburgerMenu />
         </button>
       </div>
-
-      {/* Mobile Dropdown */}
       <div
         className={`md:hidden bg-[#1c1b21] text-white border-y border-red-500 px-[8%] overflow-hidden transition-all duration-500 ${
           isMenuOpen ? "max-h-96 py-5 opacity-100" : "max-h-0 py-0 opacity-0"
