@@ -3,8 +3,6 @@ import Image from "next/image";
 
 import { FaArrowRight } from "react-icons/fa6";
 import { MdOutlineFileDownload } from "react-icons/md";
-import { IoLogoGithub, IoLogoLinkedin, IoMdMail } from "react-icons/io";
-import { FaInstagram } from "react-icons/fa";
 
 export default function Hero() {
   return (
@@ -52,41 +50,7 @@ export default function Hero() {
               </button>
             </a>
           </div>
-          <div className="flex gap-5 text-2xl mt-5">
-            <a
-              href="https://github.com/Aayusha-Mulmi"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="hover:bg-gray-800 p-2 rounded-full transition duration-300"
-            >
-              {" "}
-              <IoLogoGithub />{" "}
-            </a>
-            <a
-              href="https://www.linkedin.com/in/aayusha-mulmi-060a49333/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="hover:bg-gray-800 p-2 rounded-full transition duration-300"
-            >
-              <IoLogoLinkedin />
-            </a>
-            <a
-              href="mailto:aayumulmi7@gmail.com"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="hover:bg-gray-800 p-2 rounded-full transition duration-300"
-            >
-              <IoMdMail />
-            </a>
-            <a
-              href="https://www.instagram.com/aayu_mulmi/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="hover:bg-gray-800 p-2 rounded-full transition duration-300"
-            >
-              <FaInstagram />
-            </a>
-          </div>
+
         </div>
       </div>
     </div>
