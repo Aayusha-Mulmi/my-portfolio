@@ -38,8 +38,9 @@ export default function Experience() {
       icon: <FaSchool />,
     },
   ];
-
   return (
+    <>
+
     <div className="min-h-screen bg-neutral-900 px-4 sm:px-8 py-16">
       <h1 className="text-center text-3xl sm:text-4xl font-bold text-white mb-16">
         Education <span className="text-red-500">&</span> Experience
@@ -90,5 +91,7 @@ export default function Experience() {
         ))}
       </div>
     </div>
+      <hr className="border-neutral-600" />
+        </>
   );
 }

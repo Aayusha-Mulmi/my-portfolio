@@ -15,8 +15,7 @@ export default function Nav() {
     { name: "About", href: "/About" },
     { name: "Projects", href: "/MyWork" },
     { name: "Experience", href: "/Experience" },
-    { name: "Blog", href: "/Blog" },
-    { name: "Contact Me", href: "/Contact" },
+    { name: "Contact Me", href: "/ContactMe" },
   ];
 
   return (
@@ -44,7 +43,7 @@ export default function Nav() {
         </div>
 
         <div className="hidden md:block">
-          <Link href="/Contact">
+          <Link href="/ContactMe">
             <button className="px-4 py-2 bg-red-500 text-white rounded-md hover:bg-red-600 transition duration-300 text-sm font-semibold">
               Contact Me
             </button>
