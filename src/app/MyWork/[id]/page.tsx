@@ -1,8 +1,9 @@
 "use client";
 
-import Image from "next/image";
 import React from "react";
+import Image from "next/image";
 import { useParams, useRouter } from "next/navigation";
+
 import { projects } from "../data/projects";
 
 export default function ProjectDetails() {

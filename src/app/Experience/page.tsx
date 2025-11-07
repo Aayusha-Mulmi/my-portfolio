@@ -1,4 +1,5 @@
 import React from "react";
+
 import {
   FaBriefcase,
   FaGraduationCap,
@@ -45,7 +46,6 @@ export default function Experience() {
       </h1>
 
       <div className="relative max-w-4xl mx-auto">
-        {/* Vertical line for desktop */}
         <div className="hidden md:block absolute top-0 left-1/2 w-1 h-full bg-white -translate-x-1/2"></div>
 
         {timeline.map((item, index) => (
@@ -53,19 +53,21 @@ export default function Experience() {
             key={index}
             className="flex flex-col md:grid md:grid-cols-2 relative mt-12"
           >
-            {/* Date + Icon on mobile */}
             <div
               className={`flex items-center justify-center mb-3 md:mb-0 md:mt-8 mx-5 md:mx-10 ${
-                index % 2 === 0 ? "md:text-left md:order-2" : "md:text-right md:order-1"
+                index % 2 === 0
+                  ? "md:text-left md:order-2"
+                  : "md:text-right md:order-1"
               }`}
             >
               <div className="md:hidden flex items-center justify-center w-10 h-10 bg-red-600 text-white rounded-full border-2 border-white mr-3">
                 {item.icon}
               </div>
-              <span className="text-lg font-semibold text-neutral-400 text-center">{item.date}</span>
+              <span className="text-lg font-semibold text-neutral-400 text-center">
+                {item.date}
+              </span>
             </div>
 
-            {/* Description */}
             <div
               className={`relative mx-5 md:mx-10 p-4 sm:p-5 bg-neutral-600 border-b-4 border-neutral-300 rounded-md text-left
                 before:content-[''] before:absolute before:top-[35%] before:-translate-y-1/2
@@ -81,8 +83,6 @@ export default function Experience() {
               </h3>
               <p className="text-left text-sm sm:text-md">{item.desc}</p>
             </div>
-
-            {/* Timeline Icon for desktop */}
             <div className="hidden md:flex absolute left-1/2 top-[35%] w-10 h-10 items-center justify-center bg-red-600 text-white rounded-full -translate-x-1/2 z-10 border-2 border-white text-lg">
               {item.icon}
             </div>
