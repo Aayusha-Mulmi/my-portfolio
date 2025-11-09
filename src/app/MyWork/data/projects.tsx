@@ -17,7 +17,7 @@ export const projects = [
       "A modern portfolio built with Next.js, TypeScript, and Tailwind CSS to showcase my projects.",
     description:
       "A modern portfolio built with Next.js, TypeScript, and Tailwind CSS — showcasing my front-end projects through a clean, responsive, and performance-optimized design.",
-    link: "https://your-portfolio-link.vercel.app/",
+    link: "https://my-portfolio-eight-cyan-38.vercel.app/",
   },
   {
     id: "weather-app",
