@@ -6,7 +6,7 @@ import { MdOutlineFileDownload } from "react-icons/md";
 
 export default function Hero() {
   return (
-    <div className="h-100vh flex relative py-15  ">
+    <div className="h-screen flex relative py-15  ">
       <div className="mx-auto px-12 grid grid-cols-1 lg:grid-cols-2 gap-16 items-center justify-items-center">
         <div>
           <Image
@@ -14,7 +14,7 @@ export default function Hero() {
             width={375}
             height={375}
             alt="Picture of the author"
-            className="rounded-t-full object-cover shadow-lg h-70 w-60 sm:h-full sm:w-full"
+            className="rounded-t-full object-cover shadow-lg h-70 w-60 sm:h-[33rem] sm:w-full 2xl:h-[50rem]"
           />
         </div>
         <div>
