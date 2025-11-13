@@ -3,7 +3,7 @@
 import React from "react";
 import Image from "next/image";
 import { useRouter } from "next/navigation";
-import { projects } from "./[id]/data/projects";
+import { projects } from "./data/projects";
 
 export default function MyWork() {
   const router = useRouter();
