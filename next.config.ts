@@ -1,8 +1,10 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  output: "export",
-  images: { unoptimized: true }, // required for static export
-  trailingSlash: true,           // works better for GitHub Pages
+  output: 'export',      // static export
+  images: {
+    unoptimized: true,   // disables image optimization for static export
+  },
+  basePath: '/my-portfolio', // optional: use this if your repo is github.io/<repo-name>
 };
 
-export default nextConfig;
+module.exports = nextConfig;
