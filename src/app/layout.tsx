@@ -11,13 +11,13 @@ const playfairDisplay = Playfair_Display({
 const philosopher = Philosopher({
   variable: "--font-philosopher",
   subsets: ["latin"],
-  weight: "400"
+  weight: "400",
 });
 
 export const metadata: Metadata = {
   title: "Aayusha Mulmi",
   description: "Aayusha Portfolio",
-   icons: {
+  icons: {
     icon: "/Favicon.png",
   },
 };
@@ -29,6 +29,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+        <meta
+          name="google-site-verification"
+          content="p_o1yXYWAB-arhhWzh5njXhj68zZw9FMHcSS4XySPZ8"
+        />
+      </head>
       <body className={`${playfairDisplay.variable}, ${philosopher.variable}`}>
         <Nav />
         {children}
